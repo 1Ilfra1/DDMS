@@ -1,0 +1,29 @@
+{
+  "id": "6772f093-d2c6-4d5a-8ed4-b96f489bb15f",
+  "name": "Development Base Management System",
+  "publisher": "Ilfra",
+  "version": "1.0.0.0",
+  "brief": "",
+  "description": "",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "14.0.0.0",
+  "application": "14.0.0.0",
+  "idRanges": [
+    {
+      "from": 52400,
+      "to": 52450
+    }
+  ],
+    "showMyCode": true,
+    "runtime": "3.0",
+    "target": "Internal",
+    "features": [
+        "TranslationFile"
+    ]
+}
