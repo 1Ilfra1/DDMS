@@ -1,6 +1,6 @@
-page 52407 "DB Admin RC"
+page 52407 "DB Admin RoleCenter"
 {
-    Caption = 'DB Admin RC';
+    Caption = 'DB Admin RoleCenter';
     PageType = RoleCenter;
     UsageCategory = Administration;
 

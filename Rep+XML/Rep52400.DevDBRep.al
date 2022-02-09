@@ -5,7 +5,7 @@ report 52400 "DevelopmentDB Rep"
     RDLCLayout = 'Rep+XML\DevelopmentDbRep.rdl';
     dataset
     {
-        dataitem(DevelopmentDBIlfra; "Development DB")
+        dataitem(DevelopmentDBIlfra; "Development DataBase")
         {
             column(userid; userid)
             {

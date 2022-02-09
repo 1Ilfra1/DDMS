@@ -1,6 +1,6 @@
-table 52401 "Requestt"
+table 52401 "DataBase Request"
 {
-    Caption = 'Request';
+    Caption = 'DataBase Request';
     DataClassification = CustomerContent;
 
     fields
@@ -40,7 +40,7 @@ table 52401 "Requestt"
         field(61; "Development DB"; Code[20])
         {
             Caption = 'Development DB';
-            TableRelation = "Development DB".Code;
+            TableRelation = "Development DataBase".Code;
             trigger OnValidate()
             begin
                 AdminInsert(Rec);
@@ -80,16 +80,16 @@ table 52401 "Requestt"
         end;
     end;
 
-    procedure InitValues(VAR Req: Record "Requestt")
+    procedure InitValues(VAR Req: Record "DataBase Request")
     begin
         Req."User ID" := UserId;
         Req."Creating date" := Today;
         Req."Creating Time" := Time;
     end;
 
-    procedure AdminInsert(VAR Req: Record "Requestt")
+    procedure AdminInsert(VAR Req: Record "DataBase Request")
     var
-        DevelopmentDb: Record "Development DB";
+        DevelopmentDb: Record "Development DataBase";
     begin
         if Req."Development DB" <> '' then begin
             DevelopmentDb.GET(Req."Development DB");

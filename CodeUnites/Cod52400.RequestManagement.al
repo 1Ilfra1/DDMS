@@ -1,12 +1,12 @@
 codeunit 52400 "Request Management"
 {
     var
-        Request: Record "Requestt";
+        Request: Record "DataBase Request";
         UserSetup: Record "User Setup";
         CommentCancel: Page CommentCancel;
         AdmCheakErr: Label 'Choose an administrator';
 
-    procedure SendingRequest(var Rec: Record "Requestt")
+    procedure SendingRequest(var Rec: Record "DataBase Request")
     begin
         if Rec.Administrator = '' then
             Error(AdmCheakErr)
@@ -16,7 +16,7 @@ codeunit 52400 "Request Management"
         end;
     end;
 
-    procedure Executed(var Rec: Record "Requestt")
+    procedure Executed(var Rec: Record "DataBase Request")
     begin
         UserSetup.Get(UserId());
         IF UserSetup.Rights <> UserSetup.Rights::" " then begin
@@ -25,7 +25,7 @@ codeunit 52400 "Request Management"
         end;
     end;
 
-    procedure Cancel(var Rec: Record "Requestt")
+    procedure Cancel(var Rec: Record "DataBase Request")
     begin
         UserSetup.Get(UserId());
         if (UserSetup.Rights <> UserSetup.Rights::" ") and (Rec."Cancelation comment" = '') then begin

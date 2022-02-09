@@ -5,7 +5,7 @@ xmlport 52400 DevDBXML
     {
         textelement(RootNodeName)
         {
-            tableelement(DevelopmentDBIlfra; "Development DB")
+            tableelement(DevelopmentDBIlfra; "Development DataBase")
             {
                 fieldelement(Code; DevelopmentDBIlfra."Code")
                 {

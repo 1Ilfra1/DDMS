@@ -29,12 +29,12 @@ pageextension 52400 PteUserSetup extends "User Setup"
                 trigger OnAction();
                 var
                     UserSetup: Record "User Setup";
-                    DevelopmentDB: Record "Development DB";
+                    DevelopmentDB: Record "Development DataBase";
                 begin
                     UserSetup.GET(USERID());
                     if UserSetup.Rights <> UserSetup.Rights::" " then begin
                         DevelopmentDB.SETRANGE(Administrator, UserId());
-                        Page.RUN(Page::"Development DB List", DevelopmentDB);
+                        Page.RUN(Page::"Development DataBase List", DevelopmentDB);
                     end;
                 end;
             }

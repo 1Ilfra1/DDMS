@@ -12,10 +12,10 @@ pageextension 52401 PteCustomerCard extends "Customer Card"
 
                 trigger OnAction();
                 var
-                    DevelopmentDB: Record "Development DB";
+                    DevelopmentDB: Record "Development DataBase";
                 begin
                     DevelopmentDB.SetRange("Customer Name", Rec.Name);
-                    Page.RUN(Page::"Development DB List", DevelopmentDB);
+                    Page.RUN(Page::"Development DataBase List", DevelopmentDB);
                 end;
             }
         }

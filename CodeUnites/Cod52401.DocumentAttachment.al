@@ -7,7 +7,7 @@ codeunit 52401 DocumentAttachment
         RecNo: Code[20];
     begin
         case RecRef.NUMBER of
-            DataBase::"Requestt":
+            DataBase::"DataBase Request":
                 begin
                     MyFieldRef := RecRef.Field(1);
                     RecNo := MyFieldRef.Value;

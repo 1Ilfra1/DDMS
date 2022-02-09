@@ -1,8 +1,8 @@
-page 52403 "Request Card"
+page 52403 "DataBase Request Card"
 {
-    Caption = 'Request Card';
+    Caption = 'DataBase Request Card';
     PageType = Card;
-    SourceTable = "Requestt";
+    SourceTable = "DataBase Request";
 
     layout
     {

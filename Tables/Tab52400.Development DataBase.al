@@ -1,9 +1,9 @@
-table 52400 "Development DB"
+table 52400 "Development DataBase"
 {
-    Caption = 'Development DB';
+    Caption = 'Development DataBase';
     DataClassification = CustomerContent;
-    DrillDownPageId = "Development DB List";
-    LookupPageId = "Development DB List";
+    DrillDownPageId = "Development DataBase List";
+    LookupPageId = "Development DataBase List";
 
     fields
     {

@@ -1,12 +1,12 @@
-page 52402 "Request List"
+page 52402 "DataBase Requst list"
 {
     ApplicationArea = All;
-    Caption = 'Request List';
+    Caption = 'DataBase Requst list';
     PageType = List;
-    SourceTable = "Requestt";
+    SourceTable = "DataBase Request";
     UsageCategory = Lists;
     Editable = false;
-    CardPageId = "Request Card";
+    CardPageId = "DataBase Request Card";
 
     layout
     {

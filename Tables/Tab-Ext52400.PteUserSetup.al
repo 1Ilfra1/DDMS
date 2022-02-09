@@ -12,7 +12,7 @@ tableextension 52400 PteUserSetup extends "User Setup"
             Caption = 'Request Count';
             FieldClass = FlowField;
             Editable = false;
-            CalcFormula = Count("Requestt" Where(Administrator = Field("User ID"), Status = CONST(Sent)));
+            CalcFormula = Count("DataBase Request" Where(Administrator = Field("User ID"), Status = CONST(Sent)));
         }
     }
 }

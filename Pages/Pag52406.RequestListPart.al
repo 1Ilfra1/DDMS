@@ -2,7 +2,7 @@ page 52406 "Request ListPart"
 {
     Caption = 'Request ListPart';
     PageType = ListPart;
-    SourceTable = "Requestt";
+    SourceTable = "DataBase Request";
 
     layout
     {

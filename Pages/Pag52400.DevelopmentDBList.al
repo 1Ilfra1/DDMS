@@ -1,12 +1,12 @@
-page 52400 "Development DB List"
+page 52400 "Development DataBase List"
 {
     ApplicationArea = All;
-    Caption = 'Development DB';
+    Caption = 'Development DataBase List';
     PageType = List;
-    SourceTable = "Development DB";
+    SourceTable = "Development DataBase";
     UsageCategory = Lists;
     Editable = false;
-    CardPageId = "Development DB Card";
+    CardPageId = "Development DataBase Card";
 
 
     layout

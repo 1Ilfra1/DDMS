@@ -1,8 +1,8 @@
-page 52401 "Development DB Card"
+page 52401 "Development DataBase Card"
 {
-    Caption = 'Development DB Card';
+    Caption = 'Development DataBase Card';
     PageType = Card;
-    SourceTable = "Development DB";
+    SourceTable = "Development DataBase";
     Editable = true;
     layout
     {
@@ -91,7 +91,7 @@ page 52401 "Development DB Card"
     }
     var
         UserSetup: Record "User Setup";
-        DevelopmentDBList: Page "Development DB List";
-        DataBasesTab: Record "Development DB";
+        DevelopmentDBList: Page "Development DataBase List";
+        DataBasesTab: Record "Development DataBase";
         DBReport: Report "DevelopmentDB Rep";
 }

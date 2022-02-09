@@ -2,7 +2,7 @@ page 52405 "Dev DB ListPart"
 {
     Caption = 'Dev DB ListPart';
     PageType = ListPart;
-    SourceTable = "Development DB";
+    SourceTable = "Development DataBase";
 
     layout
     {
