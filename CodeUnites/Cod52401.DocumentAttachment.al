@@ -9,7 +9,7 @@ codeunit 52401 DocumentAttachment
         case RecRef.NUMBER of
             DataBase::"DataBase Request":
                 begin
-                    MyFieldRef := RecRef.Field(1);
+                    MyFieldRef := RecRef.Field(10);
                     RecNo := MyFieldRef.Value;
                     DocumentAttachment.SetRange("No.", RecNo);
                 end;

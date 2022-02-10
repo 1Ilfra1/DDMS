@@ -303,10 +303,10 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Development DataBase Card - Action List of Db - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 3610264150 - Action 3375155882 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Report</source>
+        <trans-unit id="Page 3610264150 - Action 2793848508 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Report of Data base list</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Development DataBase Card - Action Report - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Development DataBase Card - Action Report of Data base list - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 776643280 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Development DataBase List</source>
@@ -409,7 +409,7 @@
           <note from="Xliff Generator" annotates="general" priority="3">Report DevelopmentDB Rep - NamedType VersionLbl</note>
         </trans-unit>
         <trans-unit id="XmlPort 246671492 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>DevDBXML</source>
+          <source>Development DataBase Xml</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">XmlPort DevDBXML - Property Caption</note>
         </trans-unit>

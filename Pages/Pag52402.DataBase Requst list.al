@@ -16,16 +16,19 @@ page 52402 "DataBase Requst list"
             {
                 field("No."; Rec."No.")
                 {
+                    StyleExpr = Style;
                     ToolTip = 'Specifies the value of the No. field.';
                     ApplicationArea = All;
                 }
                 field("User Id"; Rec."User Id")
                 {
+                    StyleExpr = Style;
                     ToolTip = 'Specifies the value of the User Id field.';
                     ApplicationArea = All;
                 }
                 field("Creating date"; Rec."Creating date")
                 {
+                    StyleExpr = Style;
                     ToolTip = 'Specifies the value of the Creating date field.';
                     ApplicationArea = All;
                 }
@@ -37,11 +40,13 @@ page 52402 "DataBase Requst list"
                 }
                 field(Description; Rec.Description)
                 {
+                    StyleExpr = Style;
                     ToolTip = 'Specifies the value of the Description field.';
                     ApplicationArea = All;
                 }
                 field("Cancelation comment"; Rec."Cancelation comment")
                 {
+                    StyleExpr = Style;
                     ShowMandatory = true;
                     ToolTip = 'Specifies the value of the Cancelation comment field.';
                     ApplicationArea = All;
@@ -65,6 +70,7 @@ page 52402 "DataBase Requst list"
         if Rec.Priority = Rec.Priority::Emergency then
             Style := 'Attention';
     end;
+
     var
         UserSetup: Record "User Setup";
         Style: Text[20];

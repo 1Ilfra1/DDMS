@@ -47,19 +47,26 @@ page 52400 "Development DataBase List"
             {
                 Caption = 'DevDBXML';
                 Image = Export;
-                RunObject = XMLport DevDBXML;
                 Promoted = true;
                 PromotedCategory = Process;
                 ApplicationArea = All;
+                trigger OnAction()
+                begin
+                    Xmlport.Run(Xmlport::DevDBXML, false, false);
+                end;
             }
             action("Report of Data base list")
             {
                 Caption = 'Report of Data base list';
                 Image = Report;
-                RunObject = Report "DevelopmentDB Rep";
+                // RunObject = Report "DevelopmentDB Rep";
                 Promoted = true;
                 PromotedCategory = Process;
                 ApplicationArea = All;
+                trigger OnAction()
+                begin
+                    Report.Run(Report::"DevelopmentDB Rep");
+                end;
             }
         }
     }

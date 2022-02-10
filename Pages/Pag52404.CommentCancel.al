@@ -3,6 +3,7 @@ page 52404 CommentCancel
     Caption = 'CommentCancel';
     PageType = Card;
     SourceTable = "Name/Value Buffer";
+    
     layout
     {
         area(content)
@@ -17,6 +18,7 @@ page 52404 CommentCancel
             }
         }
     }
+
     procedure GetInputValue(): Text[250]
     begin
         exit(Value);

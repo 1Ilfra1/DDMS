@@ -48,10 +48,10 @@ table 52401 "DataBase Request"
         }
         field(70; Administrator; Code[50])
         {
-            Caption = 'Administrator';
             Editable = false;
-            FieldClass = FlowField;
-            CalcFormula = lookup("User Setup"."User ID" where("Rights" = filter('System Admin' | 'Data Admin' | 'Rights Admin')));
+            Caption = 'Administrator';
+            // FieldClass = FlowField;
+            // CalcFormula = lookup("User Setup"."User ID" where("Rights" = filter('System Admin' | 'Data Admin' | 'Rights Admin')));
         }
         field(71; "Cancelation comment"; Text[250])
         {
@@ -80,6 +80,7 @@ table 52401 "DataBase Request"
         end;
     end;
 
+
     procedure InitValues(VAR Req: Record "DataBase Request")
     begin
         Req."User ID" := UserId;
@@ -94,6 +95,7 @@ table 52401 "DataBase Request"
         if Req."Development DB" <> '' then begin
             DevelopmentDb.GET(Req."Development DB");
             Req.Administrator := DevelopmentDb.Administrator;
+            // Rec.Modify();
         end;
     end;
 

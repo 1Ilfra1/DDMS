@@ -2,7 +2,8 @@ report 52400 "DevelopmentDB Rep"
 {
     Caption = 'DevelopmentDBRep';
     DefaultLayout = RDLC; // if Word use WordLayout property
-    RDLCLayout = 'Rep+XML\DevelopmentDbRep.rdl';
+    RDLCLayout = 'Rep_XML\DevelopmentDbRep.rdl';
+    
     dataset
     {
         dataitem(DevelopmentDBIlfra; "Development DataBase")

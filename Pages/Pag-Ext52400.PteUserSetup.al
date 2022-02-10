@@ -7,7 +7,6 @@ pageextension 52400 PteUserSetup extends "User Setup"
         {
             field("Rights"; Rights)
             {
-                Editable = false;
                 Caption = 'Rights';
             }
             field("Request Count"; RequestCount)

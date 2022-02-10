@@ -73,9 +73,9 @@ page 52401 "Development DataBase Card"
                         DevelopmentDBList.Run();
                 end;
             }
-            action("Report")
+            action("Report of Data base list")
             {
-                Caption = 'Report';
+                Caption = 'Report of Data base list';
                 image = Report;
                 Promoted = true;
                 PromotedCategory = Process;

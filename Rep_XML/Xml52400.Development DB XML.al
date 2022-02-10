@@ -1,6 +1,8 @@
 xmlport 52400 DevDBXML
 {
-    Caption = 'DevDBXML';
+    Caption = 'Development DataBase Xml';
+    Direction = Export;
+
     schema
     {
         textelement(RootNodeName)
