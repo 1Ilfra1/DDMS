@@ -28,7 +28,7 @@ page 52401 "Development DataBase Card"
                     ApplicationArea = All;
                     trigger OnValidate()
                     begin
-                        CurrPage.Update(true);
+                        Rec.CalcFields("Customer Name");
                     end;
                 }
                 field("Customer Name"; Rec."Customer Name")

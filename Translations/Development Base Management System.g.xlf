@@ -433,6 +433,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension PteUserSetup - Action List of db - Property Caption</note>
         </trans-unit>
+        <trans-unit id="PageExtension 655076217 - Action 3877786487 - Method 1377591017 - NamedType 4001714570" size-unit="char" translate="yes" xml:space="preserve" al-object-target="PageExtension 655076217">
+          <source>Not enough</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PteUserSetup - Action List of db - Method OnAction - NamedType RightsErr</note>
+        </trans-unit>
         <trans-unit id="PageExtension 655076217 - Control 4191669918 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 337631938">
           <source>Request Count</source>
           <note from="Developer" annotates="general" priority="2"></note>

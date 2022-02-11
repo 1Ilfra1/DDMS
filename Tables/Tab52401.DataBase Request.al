@@ -5,7 +5,7 @@ table 52401 "DataBase Request"
 
     fields
     {
-        field(10; "No."; Code[20])
+        field(1; "No."; Code[20])
         {
             Caption = 'No.';
         }

@@ -18,7 +18,6 @@ pageextension 52400 PteUserSetup extends "User Setup"
 
     actions
     {
-        // Adding a new action group 'MyNewActionGroup' in the 'Creation' area
         addlast(Processing)
         {
             action("List of db")
@@ -29,12 +28,15 @@ pageextension 52400 PteUserSetup extends "User Setup"
                 var
                     UserSetup: Record "User Setup";
                     DevelopmentDB: Record "Development DataBase";
+                    RightsErr: label 'Not enough';
                 begin
                     UserSetup.GET(USERID());
                     if UserSetup.Rights <> UserSetup.Rights::" " then begin
                         DevelopmentDB.SETRANGE(Administrator, UserId());
                         Page.RUN(Page::"Development DataBase List", DevelopmentDB);
-                    end;
+                    end
+                    else
+                        UserSetup.FieldError(Rights, RightsErr);
                 end;
             }
         }
